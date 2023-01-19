@@ -1,0 +1,72 @@
+.container__header {
+  background: linear-gradient(rgb(70, 196, 238), #fff);
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto auto auto 100px;
+  grid-template-areas: "header" "animacion" "copa1" "copa2" "copa3";
+}
+
+h1 {
+  color: rgb(70, 196, 238);
+  align-items: center;
+  text-align: center;
+  grid-area: animacion;
+}
+
+span {
+  color: #fff;
+}
+
+.container__header {
+  grid-area: header;
+}
+
+.container__main {
+  grid-area: copa1;
+  gap: 10px;
+}
+
+.container__section {
+  grid-area: copa2;
+}
+
+.container__foto3 {
+  grid-area: copa3;
+}
+
+.fotos {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.fotos__footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.textofooter {
+  padding-top: 10px;
+  text-align: center;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}/*# sourceMappingURL=main.css.map */
